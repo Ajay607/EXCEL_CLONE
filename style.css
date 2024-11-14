@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
 }
+/*  ______file_sections_contains_tab_start_________ */
 .page-actions-cont{
     height: 3rem;
     background-color: #218c74;
@@ -15,20 +16,69 @@ body{
     margin: 0.5rem;
     color: #f1f2f6;
 }
+/*  ______file_sections_contains_tab_End_________ */
+
+/* ___________font_setting_Start___________ */
 .cellprop-actions-cont{
     height: 3rem;
-    background-color: lightsalmon;
+    background-color: #ecf0f1;
     display: flex;
     align-items: center;
+    column-gap: 10px;
+    padding-left: 0.5rem;
 }
+.cellprop-actions-cont > select{ 
+    padding: 0.2rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+/* ___________font_setting_End___________ */
+/* ________________formula_actions_cont_Start_____________ */
 .formula-actions-cont{
     height: 3rem;
     background-color: lightblue;
 }
+/* ________________formula_actions_cont_End_____________ */
+
+/* ___________grid_cont_Start______________ */
 .grid-cont{
  height: calc(100vh - 12rem);
 }
+/* ___________grid_cont_End________________ */
+
+
+
+
+
+/* _________sheets_wrapper_start___________ */
 .sheet-actions-cont{
     height: 3rem;
-    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0.5rem;
+    background-color: #ecf0f1;
 }
+.sheet-add-icon{
+    width: 24px;
+    height: 24px;
+}
+.sheets-folder-container{
+    height: 1.5rem;
+    /* background-color: yellow; */
+    display: inline-block;
+    width: calc(100% - 32px);
+    display: flex;
+    align-items: center;
+}
+.sheet-folder{
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+    font-size: 0.9rem;
+}
+
+/* _________sheets_wrapper_end_____________ */
