@@ -36,16 +36,87 @@ body{
 
 
 /* ___________font_setting_End___________ */
+
+
 /* ________________formula_actions_cont_Start_____________ */
 .formula-actions-cont{
     height: 3rem;
-    background-color: lightblue;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding-left: .5rem;
 }
+.formula-actions-cont > input{
+    border: 0;
+    outline: 0;
+    height: 24px;
+}
+.formula-actions-cont > input.address-bar{
+    width: 5rem;
+}
+.formula-actions-cont > input.formula-bar{
+    width: calc(100vw - 9.3rem);
+}
+
 /* ________________formula_actions_cont_End_____________ */
 
 /* ___________grid_cont_Start______________ */
 .grid-cont{
  height: calc(100vh - 12rem);
+ position: relative;
+ overflow:  scroll;
+ background-color: #ecf0f1;
+}
+.top-left-dummy-box{
+    width: 2rem;
+    height: 2rem;
+    background-color: #747d8c;
+    position: fixed;
+    z-index: 5;
+}
+.address-col-cont{
+    /* height: 10rem; */
+    text-align: center;
+    vertical-align: middle;
+    width: 2rem;
+    position: sticky;
+    top: 2rem;
+    left: 0;
+    
+}
+.address-row-cont{
+    /* width: calc(100vw - 2rem); */
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    left: 2rem;
+    top: 0;
+    z-index: 2;
+    background-color: #ecf0f1;
+}
+.cells-cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    /* width: 10rem;
+    height: 10rem; */
+}
+.address-col{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #dfe4ea;
+}
+.address-row{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* ___________grid_cont_End________________ */
 
@@ -80,5 +151,20 @@ body{
     text-decoration-thickness: 2px;
     font-size: 0.9rem;
 }
+.row-cont{
+    display: flex;
+}
+.cell{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 /* _________sheets_wrapper_end_____________ */
+
+
